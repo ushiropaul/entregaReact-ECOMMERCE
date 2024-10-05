@@ -1,0 +1,39 @@
+.navBar nav .menuHamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navBar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    text-decoration: underline white;
+}
+
+@media (max-width: 758px) {
+    .navBar nav .menuHamburger {
+        display: block;
+    }
+
+    .navBar nav ul {
+        display: none; /* Oculta el menú inicialmente */
+        top: 10rem;
+    }
+
+
+    .navBar nav.active ul {
+        display: flex; /* Muestra el menú cuando está activo */
+        flex-direction: column;
+        background-color: #000000;
+        padding: 1rem;
+        gap: 1rem;
+        list-style: none;
+        position: absolute;
+        top: 9rem;
+        left: 0;
+    
+    }
+}
